@@ -1,0 +1,170 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "########################################################################"
+      },
+      {
+        "line": 2,
+        "value": "# Author : Tilewa"
+      },
+      {
+        "line": 3,
+        "value": "# Feature : Account Management"
+      },
+      {
+        "line": 4,
+        "value": "# Date : 07/05/2020"
+      },
+      {
+        "line": 5,
+        "value": "########################################################################"
+      }
+    ],
+    "line": 9,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Register An Account",
+        "description": "",
+        "id": "account--management;register-an-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8162300639,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User on Register page",
+            "match": {
+              "location": "CreateAccount.userOnRegisterPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1791804336,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click Create account",
+            "match": {
+              "location": "CreateAccount.userClickCreateAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 855013137,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter Tester as first name",
+            "match": {
+              "location": "CreateAccount.userEnterTesterAsFirstName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 147900505,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enter Test as last name",
+            "match": {
+              "location": "CreateAccount.userEnterTestAsLastName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 141075752,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on sign up newsletter",
+            "match": {
+              "location": "CreateAccount.userClickOnSignUpNewsletter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 317844107,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enter tester@test.com as email",
+            "match": {
+              "location": "CreateAccount.userEnterTesterTestComAsEmail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 294114019,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User enter Psunday@ as password",
+            "match": {
+              "location": "CreateAccount.userEnterSundayAsPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168251894,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enter Psunday@ as comfirm password",
+            "match": {
+              "location": "CreateAccount.userEnterPsundayAsComfirmPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1293334003,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User click on create an account button",
+            "match": {
+              "location": "CreateAccount.userClickOnCreateAnAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101694,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "account open successfully",
+            "match": {
+              "location": "CreateAccount.accountOpenSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Account  Management",
+    "description": "\nCreateAccount",
+    "id": "account--management",
+    "keyword": "Feature",
+    "uri": "CreateAccount.feature",
+    "tags": [
+      {
+        "line": 8,
+        "name": "@Sanity"
+      }
+    ]
+  }
+]
