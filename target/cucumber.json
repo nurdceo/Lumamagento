@@ -25,132 +25,127 @@
     "line": 9,
     "elements": [
       {
-        "line": 12,
-        "name": "Register An Account",
+        "line": 25,
+        "name": "Create An Account",
         "description": "",
-        "id": "account--management;register-an-account",
+        "id": "account--management;create-an-account;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 8162300639,
+              "duration": 10627106169,
               "status": "passed"
             },
-            "line": 14,
-            "name": "User on Register page",
+            "line": 15,
+            "name": "User on Create an Account page",
             "match": {
-              "location": "CreateAccount.userOnRegisterPage()"
+              "location": "CreateAccountSteps.userOnCreateAnAccountPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1791804336,
+              "duration": 1033566513,
               "status": "passed"
             },
-            "line": 15,
-            "name": "User click Create account",
+            "line": 16,
+            "name": "user enters \"Tester\" and \"Test\"",
             "match": {
-              "location": "CreateAccount.userClickCreateAccount()"
+              "arguments": [
+                {
+                  "val": "Tester",
+                  "offset": 13
+                },
+                {
+                  "val": "Test",
+                  "offset": 26
+                }
+              ],
+              "location": "CreateAccountSteps.userEntersAnd(String,String)"
             },
+            "matchedColumns": [
+              0,
+              1
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 855013137,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User enter Tester as first name",
-            "match": {
-              "location": "CreateAccount.userEnterTesterAsFirstName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 147900505,
+              "duration": 121784,
               "status": "passed"
             },
             "line": 17,
-            "name": "User enter Test as last name",
+            "name": "user enter \"tester@test.com\"",
             "match": {
-              "location": "CreateAccount.userEnterTestAsLastName()"
+              "arguments": [
+                {
+                  "val": "tester@test.com",
+                  "offset": 12
+                }
+              ],
+              "location": "CreateAccountSteps.userEnter(String)"
             },
+            "matchedColumns": [
+              2
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 141075752,
+              "duration": 1822322,
               "status": "passed"
             },
             "line": 18,
-            "name": "User click on sign up newsletter",
+            "name": "user enter \"Psunday@\" and \"Psunday@\"",
             "match": {
-              "location": "CreateAccount.userClickOnSignUpNewsletter()"
+              "arguments": [
+                {
+                  "val": "Psunday@",
+                  "offset": 12
+                },
+                {
+                  "val": "Psunday@",
+                  "offset": 27
+                }
+              ],
+              "location": "CreateAccountSteps.userEnterAnd(String,String)"
             },
+            "matchedColumns": [
+              3,
+              4
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 317844107,
+              "duration": 144148,
               "status": "passed"
             },
             "line": 19,
-            "name": "User enter tester@test.com as email",
+            "name": "user click on Create Account Button",
             "match": {
-              "location": "CreateAccount.userEnterTesterTestComAsEmail()"
+              "location": "CreateAccountSteps.userClickOnCreateAccountButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 294114019,
+              "duration": 36860,
               "status": "passed"
             },
             "line": 20,
-            "name": "User enter Psunday@ as password",
+            "name": "Account Open Successfully",
             "match": {
-              "location": "CreateAccount.userEnterSundayAsPassword()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 168251894,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User enter Psunday@ as comfirm password",
-            "match": {
-              "location": "CreateAccount.userEnterPsundayAsComfirmPassword()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1293334003,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User click on create an account button",
-            "match": {
-              "location": "CreateAccount.userClickOnCreateAnAccountButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 101694,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "account open successfully",
-            "match": {
-              "location": "CreateAccount.accountOpenSuccessfully()"
+              "location": "CreateAccountSteps.accountOpenSuccessfully()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@Sanity"
           }
         ]
       }
