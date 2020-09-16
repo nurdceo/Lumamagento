@@ -9,15 +9,18 @@
 Feature: Account  Management
 
   CreateAccount
-  Scenario: Register An Account
 
-    Given User on Register page
-    When User click Create account
-    And User enter Tester as first name
-    And User enter Test as last name
-    And User click on sign up newsletter
-    And User enter tester@test.com as email
-    And User enter Psunday@ as password
-    And User enter Psunday@ as comfirm password
-    And User click on create an account button
-    Then account open successfully
+  Scenario Outline: Create An Account
+
+    Given User on Create an Account page
+    When user enters "<FirstName>" and "<LastName>"
+    And user click on Sign up newsletter
+    And user enter "<Email>"
+    And user enter "<Password>" and "<ConfirmPassword>"
+    And user click on Create Account Button
+    Then Account Open Successfully
+
+
+    Examples:
+      | FirstName | LastName | Email           | Password | ConfirmPassword |
+      | Tester    | Test     | tester1@test.com | Psunday@ | Psunday@        |

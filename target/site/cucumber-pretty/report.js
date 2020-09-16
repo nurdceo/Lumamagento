@@ -54,26 +54,31 @@ formatter.step({
 });
 formatter.step({
   "line": 17,
-  "name": "user enter \"\u003cEmail\u003e\"",
+  "name": "user click on Sign up newsletter",
   "keyword": "And "
 });
 formatter.step({
   "line": 18,
-  "name": "user enter \"\u003cPassword\u003e\" and \"\u003cConfirmPassword\u003e\"",
+  "name": "user enter \"\u003cEmail\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 19,
-  "name": "user click on Create Account Button",
+  "name": "user enter \"\u003cPassword\u003e\" and \"\u003cConfirmPassword\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 20,
+  "name": "user click on Create Account Button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
   "name": "Account Open Successfully",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 23,
+  "line": 24,
   "name": "",
   "description": "",
   "id": "account--management;create-an-account;",
@@ -86,25 +91,25 @@ formatter.examples({
         "Password",
         "ConfirmPassword"
       ],
-      "line": 24,
+      "line": 25,
       "id": "account--management;create-an-account;;1"
     },
     {
       "cells": [
         "Tester",
         "Test",
-        "tester@test.com",
+        "tester1@test.com",
         "Psunday@",
         "Psunday@"
       ],
-      "line": 25,
+      "line": 26,
       "id": "account--management;create-an-account;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 25,
+  "line": 26,
   "name": "Create An Account",
   "description": "",
   "id": "account--management;create-an-account;;2",
@@ -133,14 +138,19 @@ formatter.step({
 });
 formatter.step({
   "line": 17,
-  "name": "user enter \"tester@test.com\"",
+  "name": "user click on Sign up newsletter",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "user enter \"tester1@test.com\"",
   "matchedColumns": [
     2
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
+  "line": 19,
   "name": "user enter \"Psunday@\" and \"Psunday@\"",
   "matchedColumns": [
     3,
@@ -149,12 +159,12 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 19,
+  "line": 20,
   "name": "user click on Create Account Button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 20,
+  "line": 21,
   "name": "Account Open Successfully",
   "keyword": "Then "
 });
@@ -162,7 +172,7 @@ formatter.match({
   "location": "CreateAccountSteps.userOnCreateAnAccountPage()"
 });
 formatter.result({
-  "duration": 10627106169,
+  "duration": 8915689450,
   "status": "passed"
 });
 formatter.match({
@@ -179,20 +189,27 @@ formatter.match({
   "location": "CreateAccountSteps.userEntersAnd(String,String)"
 });
 formatter.result({
-  "duration": 1033566513,
+  "duration": 939747047,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CreateAccountSteps.userClickOnSignUpNewsletter()"
+});
+formatter.result({
+  "duration": 193949355,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "tester@test.com",
+      "val": "tester1@test.com",
       "offset": 12
     }
   ],
   "location": "CreateAccountSteps.userEnter(String)"
 });
 formatter.result({
-  "duration": 121784,
+  "duration": 333368228,
   "status": "passed"
 });
 formatter.match({
@@ -209,21 +226,21 @@ formatter.match({
   "location": "CreateAccountSteps.userEnterAnd(String,String)"
 });
 formatter.result({
-  "duration": 1822322,
+  "duration": 570662723,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateAccountSteps.userClickOnCreateAccountButton()"
 });
 formatter.result({
-  "duration": 144148,
+  "duration": 2371980924,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateAccountSteps.accountOpenSuccessfully()"
 });
 formatter.result({
-  "duration": 36860,
+  "duration": 29722,
   "status": "passed"
 });
 });

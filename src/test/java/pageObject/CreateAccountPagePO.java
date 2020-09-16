@@ -17,9 +17,9 @@ public class CreateAccountPagePO {
 
 
     @FindBy(id = "is_subscribed")
-    public static WebElement newLetterField;
+    public static WebElement newsLetterField;
 
-    @FindBy(id = "email")
+    @FindBy(id = "email_address")
     public static WebElement emailField;
 
     @FindBy(id = "password")
@@ -64,13 +64,15 @@ public class CreateAccountPagePO {
         confirmPasswordField.sendKeys(ConfirmPassword);
     }
 
-    public void userClickOnCreateAccountButton(){
-        userClickOnCreateAccountButton();
+    public void userClickOnSignUpNewsletter(){
+        newsLetterField.click();
+
 
     }
 
-    public void accountOpenSuccessfully(){
-        accountOpenSuccessfully();
+    public void userClickOnCreateAccountButton(){
+        createAccountButton.click();
+
 
     }
 

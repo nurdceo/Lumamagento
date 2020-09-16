@@ -47,6 +47,14 @@ public class CreateAccountSteps {
 
     }
 
+    @And("^user click on Sign up newsletter$")
+    public void userClickOnSignUpNewsletter() {
+        CreateAccountPagePO createAccountPagePO = new CreateAccountPagePO(driver);
+        createAccountPagePO.userClickOnSignUpNewsletter();
+
+    }
+
+
     @And("^user click on Create Account Button$")
     public void userClickOnCreateAccountButton() {
         CreateAccountPagePO createAccountPagePO = new CreateAccountPagePO(driver);
@@ -56,8 +64,13 @@ public class CreateAccountSteps {
 
     @Then("^Account Open Successfully$")
     public void accountOpenSuccessfully() {
-        CreateAccountPagePO createAccountPagePO = new CreateAccountPagePO(driver);
-        createAccountPagePO.accountOpenSuccessfully();
+
 
     }
+
+
+
+
+
+
 }

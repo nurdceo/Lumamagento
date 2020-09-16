@@ -25,7 +25,7 @@
     "line": 9,
     "elements": [
       {
-        "line": 25,
+        "line": 26,
         "name": "Create An Account",
         "description": "",
         "id": "account--management;create-an-account;;2",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10627106169,
+              "duration": 8915689450,
               "status": "passed"
             },
             "line": 15,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 1033566513,
+              "duration": 939747047,
               "status": "passed"
             },
             "line": 16,
@@ -72,15 +72,27 @@
           },
           {
             "result": {
-              "duration": 121784,
+              "duration": 193949355,
               "status": "passed"
             },
             "line": 17,
-            "name": "user enter \"tester@test.com\"",
+            "name": "user click on Sign up newsletter",
+            "match": {
+              "location": "CreateAccountSteps.userClickOnSignUpNewsletter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 333368228,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enter \"tester1@test.com\"",
             "match": {
               "arguments": [
                 {
-                  "val": "tester@test.com",
+                  "val": "tester1@test.com",
                   "offset": 12
                 }
               ],
@@ -93,10 +105,10 @@
           },
           {
             "result": {
-              "duration": 1822322,
+              "duration": 570662723,
               "status": "passed"
             },
-            "line": 18,
+            "line": 19,
             "name": "user enter \"Psunday@\" and \"Psunday@\"",
             "match": {
               "arguments": [
@@ -119,10 +131,10 @@
           },
           {
             "result": {
-              "duration": 144148,
+              "duration": 2371980924,
               "status": "passed"
             },
-            "line": 19,
+            "line": 20,
             "name": "user click on Create Account Button",
             "match": {
               "location": "CreateAccountSteps.userClickOnCreateAccountButton()"
@@ -131,10 +143,10 @@
           },
           {
             "result": {
-              "duration": 36860,
+              "duration": 29722,
               "status": "passed"
             },
-            "line": 20,
+            "line": 21,
             "name": "Account Open Successfully",
             "match": {
               "location": "CreateAccountSteps.accountOpenSuccessfully()"
