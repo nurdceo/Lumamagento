@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = {"com.magento.stepDefinitions", "com.magento.cucumber"},
         format = {"pretty", "html:target/site/cucumber-pretty", "json:target/cucumber.json"},
         monochrome = true,
-        tags = {"@Sanity"})
+        tags = {"@Login"})
 
 public class TestRunner {
 

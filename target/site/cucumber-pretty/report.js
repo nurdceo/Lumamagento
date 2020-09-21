@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("CreateAccount.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("LoginAccount.feature");
 formatter.feature({
   "comments": [
     {
@@ -15,7 +15,7 @@ formatter.feature({
     },
     {
       "line": 4,
-      "value": "# Date : 07/05/2020"
+      "value": "# Date : 20/09/2020"
     },
     {
       "line": 5,
@@ -23,113 +23,92 @@ formatter.feature({
     }
   ],
   "line": 9,
-  "name": "Account  Management",
-  "description": "\nCreateAccount",
-  "id": "account--management",
+  "name": "Login Management",
+  "description": "\nLoginAccount",
+  "id": "login-management",
   "keyword": "Feature",
   "tags": [
     {
       "line": 8,
-      "name": "@Sanity"
+      "name": "@Login"
     }
   ]
 });
 formatter.scenarioOutline({
   "line": 13,
-  "name": "Create An Account",
+  "name": "Login Account",
   "description": "",
-  "id": "account--management;create-an-account",
+  "id": "login-management;login-account",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 15,
-  "name": "User on Create an Account page",
+  "name": "User on login page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 16,
-  "name": "user enters \"\u003cFirstName\u003e\" and \"\u003cLastName\u003e\"",
+  "name": "User enter \"\u003cEmail\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "When "
 });
 formatter.step({
   "line": 17,
-  "name": "user click on Sign up newsletter",
+  "name": "User click on Sign in Button",
   "keyword": "And "
 });
 formatter.step({
   "line": 18,
-  "name": "user enter \"\u003cEmail\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 19,
-  "name": "user enter \"\u003cPassword\u003e\" and \"\u003cConfirmPassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 20,
-  "name": "user click on Create Account Button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 21,
-  "name": "Account Open Successfully",
+  "name": "Account login Successfully",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 24,
+  "line": 22,
   "name": "",
   "description": "",
-  "id": "account--management;create-an-account;",
+  "id": "login-management;login-account;",
   "rows": [
     {
       "cells": [
-        "FirstName",
-        "LastName",
         "Email",
-        "Password",
-        "ConfirmPassword"
+        "Password"
       ],
-      "line": 25,
-      "id": "account--management;create-an-account;;1"
+      "line": 23,
+      "id": "login-management;login-account;;1"
     },
     {
       "cells": [
-        "Tester",
-        "Test",
         "tester1@test.com",
-        "Psunday@",
         "Psunday@"
       ],
-      "line": 26,
-      "id": "account--management;create-an-account;;2"
+      "line": 24,
+      "id": "login-management;login-account;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 26,
-  "name": "Create An Account",
+  "line": 24,
+  "name": "Login Account",
   "description": "",
-  "id": "account--management;create-an-account;;2",
+  "id": "login-management;login-account;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 8,
-      "name": "@Sanity"
+      "name": "@Login"
     }
   ]
 });
 formatter.step({
   "line": 15,
-  "name": "User on Create an Account page",
+  "name": "User on login page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 16,
-  "name": "user enters \"Tester\" and \"Test\"",
+  "name": "User enter \"tester1@test.com\" and \"Psunday@\"",
   "matchedColumns": [
     0,
     1
@@ -138,65 +117,19 @@ formatter.step({
 });
 formatter.step({
   "line": 17,
-  "name": "user click on Sign up newsletter",
+  "name": "User click on Sign in Button",
   "keyword": "And "
 });
 formatter.step({
   "line": 18,
-  "name": "user enter \"tester1@test.com\"",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 19,
-  "name": "user enter \"Psunday@\" and \"Psunday@\"",
-  "matchedColumns": [
-    3,
-    4
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 20,
-  "name": "user click on Create Account Button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 21,
-  "name": "Account Open Successfully",
+  "name": "Account login Successfully",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "CreateAccountSteps.userOnCreateAnAccountPage()"
+  "location": "LoginAccountSteps.userOnLoginPage()"
 });
 formatter.result({
-  "duration": 8915689450,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Tester",
-      "offset": 13
-    },
-    {
-      "val": "Test",
-      "offset": 26
-    }
-  ],
-  "location": "CreateAccountSteps.userEntersAnd(String,String)"
-});
-formatter.result({
-  "duration": 939747047,
-  "status": "passed"
-});
-formatter.match({
-  "location": "CreateAccountSteps.userClickOnSignUpNewsletter()"
-});
-formatter.result({
-  "duration": 193949355,
+  "duration": 4988461755,
   "status": "passed"
 });
 formatter.match({
@@ -204,43 +137,30 @@ formatter.match({
     {
       "val": "tester1@test.com",
       "offset": 12
-    }
-  ],
-  "location": "CreateAccountSteps.userEnter(String)"
-});
-formatter.result({
-  "duration": 333368228,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Psunday@",
-      "offset": 12
     },
     {
       "val": "Psunday@",
-      "offset": 27
+      "offset": 35
     }
   ],
-  "location": "CreateAccountSteps.userEnterAnd(String,String)"
+  "location": "LoginAccountSteps.userEnterAnd(String,String)"
 });
 formatter.result({
-  "duration": 570662723,
+  "duration": 384402505,
   "status": "passed"
 });
 formatter.match({
-  "location": "CreateAccountSteps.userClickOnCreateAccountButton()"
+  "location": "LoginAccountSteps.userClickOnSignInButton()"
 });
 formatter.result({
-  "duration": 2371980924,
+  "duration": 1021404276,
   "status": "passed"
 });
 formatter.match({
-  "location": "CreateAccountSteps.accountOpenSuccessfully()"
+  "location": "LoginAccountSteps.accountLoginSuccessfully()"
 });
 formatter.result({
-  "duration": 29722,
+  "duration": 36370,
   "status": "passed"
 });
 });

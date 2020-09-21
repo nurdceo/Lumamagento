@@ -15,7 +15,7 @@
       },
       {
         "line": 4,
-        "value": "# Date : 07/05/2020"
+        "value": "# Date : 20/09/2020"
       },
       {
         "line": 5,
@@ -25,44 +25,44 @@
     "line": 9,
     "elements": [
       {
-        "line": 26,
-        "name": "Create An Account",
+        "line": 24,
+        "name": "Login Account",
         "description": "",
-        "id": "account--management;create-an-account;;2",
+        "id": "login-management;login-account;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 8915689450,
+              "duration": 4988461755,
               "status": "passed"
             },
             "line": 15,
-            "name": "User on Create an Account page",
+            "name": "User on login page",
             "match": {
-              "location": "CreateAccountSteps.userOnCreateAnAccountPage()"
+              "location": "LoginAccountSteps.userOnLoginPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 939747047,
+              "duration": 384402505,
               "status": "passed"
             },
             "line": 16,
-            "name": "user enters \"Tester\" and \"Test\"",
+            "name": "User enter \"tester1@test.com\" and \"Psunday@\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Tester",
-                  "offset": 13
+                  "val": "tester1@test.com",
+                  "offset": 12
                 },
                 {
-                  "val": "Test",
-                  "offset": 26
+                  "val": "Psunday@",
+                  "offset": 35
                 }
               ],
-              "location": "CreateAccountSteps.userEntersAnd(String,String)"
+              "location": "LoginAccountSteps.userEnterAnd(String,String)"
             },
             "matchedColumns": [
               0,
@@ -72,84 +72,25 @@
           },
           {
             "result": {
-              "duration": 193949355,
+              "duration": 1021404276,
               "status": "passed"
             },
             "line": 17,
-            "name": "user click on Sign up newsletter",
+            "name": "User click on Sign in Button",
             "match": {
-              "location": "CreateAccountSteps.userClickOnSignUpNewsletter()"
+              "location": "LoginAccountSteps.userClickOnSignInButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 333368228,
+              "duration": 36370,
               "status": "passed"
             },
             "line": 18,
-            "name": "user enter \"tester1@test.com\"",
+            "name": "Account login Successfully",
             "match": {
-              "arguments": [
-                {
-                  "val": "tester1@test.com",
-                  "offset": 12
-                }
-              ],
-              "location": "CreateAccountSteps.userEnter(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 570662723,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user enter \"Psunday@\" and \"Psunday@\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Psunday@",
-                  "offset": 12
-                },
-                {
-                  "val": "Psunday@",
-                  "offset": 27
-                }
-              ],
-              "location": "CreateAccountSteps.userEnterAnd(String,String)"
-            },
-            "matchedColumns": [
-              3,
-              4
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2371980924,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user click on Create Account Button",
-            "match": {
-              "location": "CreateAccountSteps.userClickOnCreateAccountButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29722,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Account Open Successfully",
-            "match": {
-              "location": "CreateAccountSteps.accountOpenSuccessfully()"
+              "location": "LoginAccountSteps.accountLoginSuccessfully()"
             },
             "keyword": "Then "
           }
@@ -157,20 +98,20 @@
         "tags": [
           {
             "line": 8,
-            "name": "@Sanity"
+            "name": "@Login"
           }
         ]
       }
     ],
-    "name": "Account  Management",
-    "description": "\nCreateAccount",
-    "id": "account--management",
+    "name": "Login Management",
+    "description": "\nLoginAccount",
+    "id": "login-management",
     "keyword": "Feature",
-    "uri": "CreateAccount.feature",
+    "uri": "LoginAccount.feature",
     "tags": [
       {
         "line": 8,
-        "name": "@Sanity"
+        "name": "@Login"
       }
     ]
   }
